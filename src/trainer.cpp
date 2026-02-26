@@ -1,9 +1,9 @@
 #include <cstddef>
 #include <vector>
-#include <markov/trainer.hpp>
+#include "markov/trainer.hpp"
 
 namespace markov {
-  void train(int &model, const std::vector<Token> &tokens) {
+  void train(Model& model, const std::vector<Token> &tokens) {
     const Order order = model.order();
 
     if (tokens.size() <= order) {

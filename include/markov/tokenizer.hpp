@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include <markov/types.hpp>
+#include "types.hpp"
 
 namespace markov {
   // Tokenize raw text into sequence of tokens.
