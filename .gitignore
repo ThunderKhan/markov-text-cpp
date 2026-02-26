@@ -1,0 +1,31 @@
+# -------------------------------------------------
+# CMake out-of-source build directory
+# -------------------------------------------------
+/build/
+
+# -------------------------------------------------
+# Compiled objects and binaries
+# -------------------------------------------------
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+# -------------------------------------------------
+# CMake generated files (just in case someone builds in-tree)
+# -------------------------------------------------
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# -------------------------------------------------
+# Editor / OS noise
+# -------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

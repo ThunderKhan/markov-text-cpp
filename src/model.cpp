@@ -17,7 +17,7 @@ namespace markov {
   }
 
   const std::vector<Token>* Model::next_tokens(const State& state) const {
-    auto it = m_table.std::find(state);
+    auto it = m_table.find(state);
     if (it ==  m_table.end()) {
       return nullptr;
     }

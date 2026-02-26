@@ -19,16 +19,16 @@ namespace markov {
       return result;
     }
 
-    static std::mt19937 rng{ std::random_device{}) };
+    static std::mt19937 rng{ std::random_device{}() };
 
     std::uniform_int_distribution<std::size_t> start_dist(0, table.size() - 1);
 
-    auto it = table.length();
+    auto it = table.begin();
     std::advance(it, start_dist(rng));
 
-    State current = it -> first;
+    State current = it->first;
 
-    for (const auto& t : currnt) {
+    for (const auto& t : current) {
       if (result.size() >= max_tokens) {
         break;
       }
@@ -44,9 +44,9 @@ namespace markov {
       }
 
       std::uniform_int_distribution<std::size_t> dist(0, nexts->size() - 1);
-      const Token& next = (*nexts)[dist[rng]];
+      const Token& next = (*nexts)[dist(rng)];
 
-      reuslt.push_back(next);
+      result.push_back(next);
 
       current.erase(current.begin());
       current.push_back(next);
