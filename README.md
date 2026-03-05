@@ -4,7 +4,7 @@ A small, clean C++ project that implements a **Markov chain–based sentence gen
 
 This project is intentionally written in a modular and beginner-friendly way, so each part of the pipeline (tokenizing, training, modeling and generation) is easy to understand, test and extend.
 
-The goal is not to build a “smart” language model — but a correct and transparent **stochastic text engine**.
+The goal is not to build a “smart” language model, but a correct and transparent **stochastic text engine**.
 
 ---
 
